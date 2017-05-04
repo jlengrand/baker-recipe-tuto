@@ -1,4 +1,4 @@
-package ertwensoep.ingredients
+package erwtensoep.ingredients
 
 import com.ing.baker.api.Ingredient
 

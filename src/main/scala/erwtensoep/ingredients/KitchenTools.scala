@@ -1,4 +1,4 @@
-package ertwensoep.ingredients
+package erwtensoep.ingredients
 
 import com.ing.baker.api.Ingredient
 
@@ -7,7 +7,9 @@ import com.ing.baker.api.Ingredient
   */
 class KitchenTools
 
-class Pan extends Ingredient
+class Pan extends Ingredient {
+  override def toString: String = "Pan"
+}
 class Mes extends Ingredient
 class Lepel extends Ingredient
 class GasFournuis extends Ingredient
