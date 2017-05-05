@@ -5,7 +5,7 @@ import com.ing.baker.java_api.{JBaker, JCompiledRecipe}
 import erwtensoep.ErwtenSoepRecipeUtils
 import erwtensoep.events.{BoodschappenGedaan, KitchenToolsReady}
 import erwtensoep.ingredients.SplitErwten
-import erwtensoep.interactions.SoupPreheating
+import erwtensoep.interactions.PreheatSoup
 import erwtensoep.recipes.ErwtenSoepRecipe
 
 /**
@@ -20,6 +20,7 @@ object ErwtenSoepCooker {
     val compiledRecipe = recipe.compileRecipe
 
     println(compiledRecipe.getRecipeVisualization())
+    println("=======")
 
     //Actual implementation
     val baker = new JBaker(

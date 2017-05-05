@@ -2,11 +2,13 @@ package erwtensoep;
 
 import com.google.common.collect.ImmutableList;
 import com.ing.baker.core.Interaction;
+import com.ing.baker.java_api.JInteraction;
 import com.ing.baker.java_api.JInteractionDescriptor;
 import com.ing.baker.java_api.JRecipe;
 import erwtensoep.events.BoodschappenGedaan;
 import erwtensoep.events.KitchenToolsReady;
-import erwtensoep.interactions.SoupPreheating;
+import erwtensoep.interactions.ChopVegetables;
+import erwtensoep.interactions.PreheatSoup;
 
 import java.util.List;
 
@@ -19,18 +21,18 @@ public final class ErwtenSoepRecipeUtils {
 
     public JRecipe createRecipe(){
         return new JRecipe("ErwtenSoepRecipe")
-                .withInteraction(
-                        JInteractionDescriptor.of(SoupPreheating.class))
+                .withInteractions(
+                        JInteractionDescriptor.of(PreheatSoup.class),
+                        JInteractionDescriptor.of(ChopVegetables.class))
                 .withSensoryEvents(
                         KitchenToolsReady.class,
-                        BoodschappenGedaan.class
-                )
-                ;
+                        BoodschappenGedaan.class);
     }
 
     public List<Interaction> getInteractions(){
         return ImmutableList.<Interaction>of(
-                new SoupPreheating()
+                new PreheatSoup(),
+                new ChopVegetables()
         );
     }
 }

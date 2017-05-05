@@ -9,7 +9,7 @@ import erwtensoep.ingredients.*;
 /**
  * Created by jll on 5/4/2017.
  */
-public class SoupPreheating implements JInteraction{
+public class PreheatSoup implements JInteraction{
 
     @ProvidesIngredient("HeatedBasicSoup")
     public HeatedBasicSoup apply(
@@ -22,7 +22,7 @@ public class SoupPreheating implements JInteraction{
             @RequiresIngredient("lepel") Lepel lepel,
             @RequiresIngredient("gasFournuis") GasFournuis gasFournuis
             ){
-        System.out.println("Interaction HeatedBasicSoup");
+        System.out.println("Heating Basic Soup ingredients");
         return new HeatedBasicSoup();
     }
 }

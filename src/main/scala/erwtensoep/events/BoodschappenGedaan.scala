@@ -9,12 +9,12 @@ import erwtensoep.ingredients._
 class BoodschappenGedaan extends Event {
   val zout = new Zout
   val laurier = new Laurier
-  val  prei= new Prei
-  val  aardappel= new Aardappel
-  val  winterwortel = new WinterWortel
-  val  knolselderij= new KnolSelderij
-  val  water = new Water
-  val  rookspek = new RookSpek
-  val  hamschrijf = new Hamschijf
-  val  spliterwten = new SplitErwten
+  val prei = new Prei
+  val aardappel= new Aardappel
+  val winterwortel = new WinterWortel
+  val knolselderij = new KnolSelderij
+  val water = new Water
+  val rookspek = new RookSpek
+  val hamschrijf = new Hamschijf
+  val spliterwten = new SplitErwten
 }
