@@ -17,4 +17,5 @@ class BoodschappenGedaan extends Event {
   val rookspek = new RookSpek
   val hamschrijf = new Hamschijf
   val spliterwten = new SplitErwten
+  val rookWorst = new RookWorst
 }

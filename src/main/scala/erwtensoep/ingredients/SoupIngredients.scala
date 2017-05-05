@@ -17,3 +17,4 @@ class Water extends Ingredient
 class RookSpek extends Ingredient
 class Hamschijf extends Ingredient
 class SplitErwten extends Ingredient
+class RookWorst extends Ingredient

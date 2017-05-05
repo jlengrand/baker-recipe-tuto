@@ -18,3 +18,6 @@ class BoiledHamSchrijf extends Ingredient
 class BoiledRookSpek extends Ingredient
 class Broth extends Ingredient
 class ChoppedMeat extends Ingredient
+
+class ErwtenSoep extends Ingredient
+class ErwtenSoepMetRookWorst extends Ingredient

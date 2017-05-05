@@ -7,9 +7,7 @@ import com.ing.baker.java_api.JInteractionDescriptor;
 import com.ing.baker.java_api.JRecipe;
 import erwtensoep.events.BoodschappenGedaan;
 import erwtensoep.events.KitchenToolsReady;
-import erwtensoep.interactions.ChopVegetables;
-import erwtensoep.interactions.CutBoiledMeat;
-import erwtensoep.interactions.PreheatSoup;
+import erwtensoep.interactions.*;
 
 import java.util.List;
 
@@ -25,7 +23,9 @@ public final class ErwtenSoepRecipeUtils {
                 .withInteractions(
                         JInteractionDescriptor.of(PreheatSoup.class),
                         JInteractionDescriptor.of(ChopVegetables.class),
-                        JInteractionDescriptor.of(CutBoiledMeat.class))
+                        JInteractionDescriptor.of(CutBoiledMeat.class),
+                        JInteractionDescriptor.of(CombineErwtenSoep.class),
+                        JInteractionDescriptor.of(AddRookWorst.class))
                 .withSensoryEvents(
                         KitchenToolsReady.class,
                         BoodschappenGedaan.class);
@@ -35,7 +35,9 @@ public final class ErwtenSoepRecipeUtils {
         return ImmutableList.<Interaction>of(
                 new PreheatSoup(),
                 new ChopVegetables(),
-                new CutBoiledMeat()
+                new CutBoiledMeat(),
+                new CombineErwtenSoep(),
+                new AddRookWorst()
         );
     }
 }
