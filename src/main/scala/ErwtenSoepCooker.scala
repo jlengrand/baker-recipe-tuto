@@ -6,7 +6,6 @@ import erwtensoep.ErwtenSoepRecipeUtils
 import erwtensoep.events.{BoodschappenGedaan, KitchenToolsReady}
 import erwtensoep.ingredients.SplitErwten
 import erwtensoep.interactions.PreheatSoup
-import erwtensoep.recipes.ErwtenSoepRecipe
 
 /**
   * Created by jll on 5/4/2017.

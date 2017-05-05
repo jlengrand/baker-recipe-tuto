@@ -12,5 +12,4 @@ class KitchenToolsReady extends Event{
   val lepel = new Lepel
   val gasFournuis = new GasFournuis
   val snijPlank = new SnijPlank
-
 }

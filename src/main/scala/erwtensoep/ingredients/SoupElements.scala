@@ -8,3 +8,13 @@ import com.ing.baker.api.Ingredient
 class SoupElements
 
 class ChoppedVegetables extends Ingredient
+class HeatedBasicSoup extends Ingredient{
+  val boiledHamschrijf = new BoiledHamSchrijf();
+  val boiledRookSpek = new BoiledRookSpek();
+  val broth = new Broth();
+}
+
+class BoiledHamSchrijf extends Ingredient
+class BoiledRookSpek extends Ingredient
+class Broth extends Ingredient
+class ChoppedMeat extends Ingredient

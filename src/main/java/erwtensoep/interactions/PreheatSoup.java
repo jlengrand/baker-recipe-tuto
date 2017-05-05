@@ -3,7 +3,6 @@ package erwtensoep.interactions;
 import com.ing.baker.java_api.JInteraction;
 import com.ing.baker.java_api.ProvidesIngredient;
 import com.ing.baker.java_api.RequiresIngredient;
-import erwtensoep.events.HeatedBasicSoup;
 import erwtensoep.ingredients.*;
 
 /**
