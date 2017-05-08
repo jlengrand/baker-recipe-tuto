@@ -21,3 +21,4 @@ class ChoppedMeat extends Ingredient
 
 class ErwtenSoep extends Ingredient
 class ErwtenSoepMetRookWorst extends Ingredient
+class CookedErwtenSoepMetRookWorst extends Ingredient

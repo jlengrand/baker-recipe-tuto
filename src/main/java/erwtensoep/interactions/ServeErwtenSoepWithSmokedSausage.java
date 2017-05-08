@@ -3,6 +3,7 @@ package erwtensoep.interactions;
 import com.ing.baker.java_api.JInteraction;
 import com.ing.baker.java_api.ProvidesIngredient;
 import com.ing.baker.java_api.RequiresIngredient;
+import erwtensoep.ingredients.CookedErwtenSoepMetRookWorst;
 import erwtensoep.ingredients.ErwtenSoep;
 import erwtensoep.ingredients.ErwtenSoepMetRookWorst;
 import erwtensoep.ingredients.RookWorst;
@@ -12,10 +13,11 @@ import erwtensoep.ingredients.RookWorst;
  */
 public class ServeErwtenSoepWithSmokedSausage implements JInteraction {
 
-    @ProvidesIngredient("ErwtenSoepMetRookWorst")
-    public ErwtenSoepMetRookWorst apply(
+    @ProvidesIngredient("cookedErwtenSoepMetRookWorst")
+    public CookedErwtenSoepMetRookWorst apply(
+            @RequiresIngredient("erwtenSoepMetRookWorst") ErwtenSoepMetRookWorst erwtenSoepMetRookWorst
     ){
         System.out.println("Finished cooking 5 minutes. Ready to serve!");
-        return new ErwtenSoepMetRookWorst();
+        return new CookedErwtenSoepMetRookWorst();
     }
 }
