@@ -25,9 +25,7 @@ public final class ErwtenSoepRecipeUtils {
                         JInteractionDescriptor.of(ChopVegetables.class),
                         JInteractionDescriptor.of(CutBoiledMeat.class),
                         JInteractionDescriptor.of(CombineErwtenSoep.class),
-                        JInteractionDescriptor.of(AddRookWorst.class),
-                        JInteractionDescriptor.of(ServeErwtenSoepWithSmokedSausage.class)
-                                .withRequiredEvent(Cooked5MinutesEvent.class))
+                        JInteractionDescriptor.of(AddRookWorst.class))
                 .withSensoryEvents(
                         KitchenToolsReady.class,
                         BoodschappenGedaan.class);
@@ -39,8 +37,7 @@ public final class ErwtenSoepRecipeUtils {
                 new ChopVegetables(),
                 new CutBoiledMeat(),
                 new CombineErwtenSoep(),
-                new AddRookWorst(),
-                new ServeErwtenSoepWithSmokedSausage()
+                new AddRookWorst()
         );
     }
 }
