@@ -7,14 +7,11 @@ import com.ing.baker.api.Ingredient
   */
 class SoupIngredients
 
-class Zout extends Ingredient
-class Laurier extends Ingredient
-class Prei extends Ingredient
-class Aardappel extends Ingredient
-class WinterWortel extends Ingredient
-class KnolSelderij extends Ingredient
+class Leek extends Ingredient
+class Potato extends Ingredient
+class Carrot extends Ingredient
 class Water extends Ingredient
-class RookSpek extends Ingredient
-class Hamschijf extends Ingredient
-class SplitErwten extends Ingredient
-class RookWorst extends Ingredient
+class Bacon extends Ingredient
+class Ham extends Ingredient
+class Peas extends Ingredient
+class SmokedSausage extends Ingredient

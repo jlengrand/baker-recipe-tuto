@@ -10,13 +10,10 @@ import erwtensoep.ingredients.*;
  */
 public class PreheatSoup implements JInteraction{
 
-    @ProvidesIngredient("HeatedBasicSoup")
+    @ProvidesIngredient("heatedBasicSoup")
     public HeatedBasicSoup apply(
-            @RequiresIngredient("water") Water water,
-            @RequiresIngredient("laurier") Laurier laurier,
-            @RequiresIngredient("rookspek") RookSpek rookSpek,
-            @RequiresIngredient("hamschrijf") Hamschijf hamschijf,
-            @RequiresIngredient("zout") Zout zout,
+            @RequiresIngredient("bacon") Bacon bacon,
+            @RequiresIngredient("ham") Ham ham,
             @RequiresIngredient("pan") Pan pan,
             @RequiresIngredient("spoon") Spoon spoon,
             @RequiresIngredient("furnace") Furnace furnace

@@ -13,11 +13,11 @@ import erwtensoep.ingredients.CuttingBoard;
  */
 public class CutBoiledMeat implements JInteraction {
 
-    @ProvidesIngredient("ChoppedMeat")
+    @ProvidesIngredient("choppedMeat")
     public ChoppedMeat apply(
             @RequiresIngredient("cuttingBoard") CuttingBoard cuttingBoard,
             @RequiresIngredient("knife") Knife knife,
-            @RequiresIngredient("HeatedBasicSoup")HeatedBasicSoup heatedBasicSoup
+            @RequiresIngredient("heatedBasicSoup")HeatedBasicSoup heatedBasicSoup
             ){
         System.out.println("Chopping boiled meat");
         return new ChoppedMeat();

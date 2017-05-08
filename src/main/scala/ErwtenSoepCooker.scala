@@ -4,7 +4,7 @@ import com.google.common.collect.ImmutableList
 import com.ing.baker.java_api.{JBaker, JCompiledRecipe}
 import erwtensoep.PeaSoupRecipeUtils
 import erwtensoep.events.{GroceriesDone, KitchenToolsReady}
-import erwtensoep.ingredients.SplitErwten
+import erwtensoep.ingredients.Peas
 import erwtensoep.interactions.PreheatSoup
 
 /**

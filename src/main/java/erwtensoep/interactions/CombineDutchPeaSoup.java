@@ -12,9 +12,9 @@ public class CombineDutchPeaSoup implements JInteraction{
 
     @ProvidesIngredient("ErwtenSoep")
     public DutchPeaSoup apply(
-            @RequiresIngredient("ChoppedMeat")ChoppedMeat choppedMeat,
-            @RequiresIngredient("ChoppedVegetables")ChoppedVegetables choppedVegetables,
-            @RequiresIngredient("HeatedBasicSoup")HeatedBasicSoup heatedBasicSoup,
+            @RequiresIngredient("choppedMeat")ChoppedMeat choppedMeat,
+            @RequiresIngredient("choppedVegetables")ChoppedVegetables choppedVegetables,
+            @RequiresIngredient("heatedBasicSoup")HeatedBasicSoup heatedBasicSoup,
             @RequiresIngredient("spoon") Spoon spoon
             ){
         System.out.println("Mixing all ingredients together");

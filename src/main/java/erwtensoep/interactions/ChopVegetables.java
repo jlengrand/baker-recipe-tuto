@@ -10,14 +10,12 @@ import erwtensoep.ingredients.*;
  */
 public class ChopVegetables implements JInteraction{
 
-    @ProvidesIngredient("ChoppedVegetables")
+    @ProvidesIngredient("choppedVegetables")
     public ChoppedVegetables apply(
             @RequiresIngredient("cuttingBoard") CuttingBoard cuttingBoard,
             @RequiresIngredient("knife") Knife knife,
-            @RequiresIngredient("prei")Prei prei,
-            @RequiresIngredient("aardappel")Aardappel aardappel,
-            @RequiresIngredient("winterwortel")WinterWortel winterwortel,
-            @RequiresIngredient("knolselderij")KnolSelderij knolSelderij
+            @RequiresIngredient("potato") Potato potato,
+            @RequiresIngredient("carrot") Carrot carrot
             ){
         System.out.println("Chopping vegetables");
         return new ChoppedVegetables();
