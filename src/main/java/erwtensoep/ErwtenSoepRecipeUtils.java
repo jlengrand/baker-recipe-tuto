@@ -2,10 +2,10 @@ package erwtensoep;
 
 import com.google.common.collect.ImmutableList;
 import com.ing.baker.core.Interaction;
-import com.ing.baker.java_api.JInteraction;
 import com.ing.baker.java_api.JInteractionDescriptor;
 import com.ing.baker.java_api.JRecipe;
 import erwtensoep.events.BoodschappenGedaan;
+import erwtensoep.events.Cooked5MinutesEvent;
 import erwtensoep.events.KitchenToolsReady;
 import erwtensoep.interactions.*;
 
@@ -25,7 +25,9 @@ public final class ErwtenSoepRecipeUtils {
                         JInteractionDescriptor.of(ChopVegetables.class),
                         JInteractionDescriptor.of(CutBoiledMeat.class),
                         JInteractionDescriptor.of(CombineErwtenSoep.class),
-                        JInteractionDescriptor.of(AddRookWorst.class))
+                        JInteractionDescriptor.of(AddRookWorst.class),
+                        JInteractionDescriptor.of(ServeErwtenSoepWithSmokedSausage.class)
+                                .withRequiredEvent(Cooked5MinutesEvent.class))
                 .withSensoryEvents(
                         KitchenToolsReady.class,
                         BoodschappenGedaan.class);
@@ -37,7 +39,8 @@ public final class ErwtenSoepRecipeUtils {
                 new ChopVegetables(),
                 new CutBoiledMeat(),
                 new CombineErwtenSoep(),
-                new AddRookWorst()
+                new AddRookWorst(),
+                new ServeErwtenSoepWithSmokedSausage()
         );
     }
 }
