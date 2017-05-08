@@ -6,7 +6,7 @@ import erwtensoep.ingredients._
 /**
   * Created by jll on 5/4/2017.
   */
-class BoodschappenGedaan extends Event {
+class GroceriesDone extends Event {
   val zout = new Zout
   val laurier = new Laurier
   val prei = new Prei

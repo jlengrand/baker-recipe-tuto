@@ -2,8 +2,8 @@ import java.util.UUID
 
 import com.google.common.collect.ImmutableList
 import com.ing.baker.java_api.{JBaker, JCompiledRecipe}
-import erwtensoep.ErwtenSoepRecipeUtils
-import erwtensoep.events.{BoodschappenGedaan, KitchenToolsReady}
+import erwtensoep.PeaSoupRecipeUtils
+import erwtensoep.events.{GroceriesDone, KitchenToolsReady}
 import erwtensoep.ingredients.SplitErwten
 import erwtensoep.interactions.PreheatSoup
 
@@ -14,7 +14,7 @@ object ErwtenSoepCooker {
   def main(args: Array[String]): Unit = {
 
     // Let's create a recipe and validate it
-    val recipeCreator = new ErwtenSoepRecipeUtils
+    val recipeCreator = new PeaSoupRecipeUtils
     val recipe = recipeCreator.createRecipe()
     val compiledRecipe = recipe.compileRecipe
 
@@ -32,7 +32,7 @@ object ErwtenSoepCooker {
 
     //Firing events
     baker.processEvent(id, new KitchenToolsReady())
-    baker.processEvent(id, new BoodschappenGedaan())
+    baker.processEvent(id, new GroceriesDone())
 
     // Recipe should be ran now
     val ingredients = baker.getIngredients(id);

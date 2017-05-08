@@ -9,16 +9,15 @@ class SoupElements
 
 class ChoppedVegetables extends Ingredient
 class HeatedBasicSoup extends Ingredient{
-  val boiledHamschrijf = new BoiledHamSchrijf();
-  val boiledRookSpek = new BoiledRookSpek();
+  val boiledHamschrijf = new BoiledHam();
+  val boiledRookSpek = new BoiledBacon();
   val broth = new Broth();
 }
 
-class BoiledHamSchrijf extends Ingredient
-class BoiledRookSpek extends Ingredient
+class BoiledHam extends Ingredient
+class BoiledBacon extends Ingredient
 class Broth extends Ingredient
 class ChoppedMeat extends Ingredient
 
-class ErwtenSoep extends Ingredient
-class ErwtenSoepMetRookWorst extends Ingredient
-class CookedErwtenSoepMetRookWorst extends Ingredient
+class DutchPeaSoup extends Ingredient
+class PeaSoupWithSmokedSausage extends Ingredient

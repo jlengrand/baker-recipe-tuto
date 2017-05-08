@@ -18,8 +18,8 @@ public class PreheatSoup implements JInteraction{
             @RequiresIngredient("hamschrijf") Hamschijf hamschijf,
             @RequiresIngredient("zout") Zout zout,
             @RequiresIngredient("pan") Pan pan,
-            @RequiresIngredient("lepel") Lepel lepel,
-            @RequiresIngredient("gasFournuis") GasFournuis gasFournuis
+            @RequiresIngredient("spoon") Spoon spoon,
+            @RequiresIngredient("furnace") Furnace furnace
             ){
         System.out.println("Heating Basic Soup ingredients");
         return new HeatedBasicSoup();

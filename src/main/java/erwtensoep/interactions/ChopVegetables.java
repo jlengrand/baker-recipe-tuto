@@ -12,8 +12,8 @@ public class ChopVegetables implements JInteraction{
 
     @ProvidesIngredient("ChoppedVegetables")
     public ChoppedVegetables apply(
-            @RequiresIngredient("snijPlank")SnijPlank snijPlank,
-            @RequiresIngredient("mes")Mes mes,
+            @RequiresIngredient("cuttingBoard") CuttingBoard cuttingBoard,
+            @RequiresIngredient("knife") Knife knife,
             @RequiresIngredient("prei")Prei prei,
             @RequiresIngredient("aardappel")Aardappel aardappel,
             @RequiresIngredient("winterwortel")WinterWortel winterwortel,
