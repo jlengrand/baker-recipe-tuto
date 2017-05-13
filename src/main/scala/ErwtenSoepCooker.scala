@@ -1,14 +1,10 @@
 import java.util.UUID
 
 import akka.actor.ActorSystem
-import com.google.common.collect.ImmutableList
-import com.ing.baker.compiler.Recipe
 import com.ing.baker.core.Baker
-import com.ing.baker.java_api.{JBaker, JCompiledRecipe}
+import com.ing.baker.java_api.JBaker
 import com.ing.baker.scala_api.{InteractionDescriptorFactory, SRecipe}
-import erwtensoep.PeaSoupRecipeUtils
 import erwtensoep.events.{GroceriesDone, KitchenToolsReady}
-import erwtensoep.ingredients.Peas
 import erwtensoep.interactions._
 
 import scala.concurrent.duration.FiniteDuration
